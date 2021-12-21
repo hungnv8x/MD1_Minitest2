@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1. in cac so tu 1-100
+    function inSo() {
+        for (let i = 1; i <= 100; i++) {
+            document.write(i+' ')
+        }
+    }
+    //2. Nhap vao 1 so in ra tu 1 den so day
+    function inso2(number) {
+        for (let i = 1; i <=number ; i++) {
+            document.write(i+' ')
+        }
+    }
+    //3.nhận vào 1 số, trả về bình phương số đó
+    function tinhBinhPhuong(a) {
+        return a*a;
+    }
+    //4.nhận vào 2 số, trả trả về tích 2 số
+    function tinhTichHaiSo(a,b) {
+        return a*b;
+    }
+    //5.nhận vào 1 mảng, trả về tổng các phần tử của mảng
+    function tinhTongCacPhanTuMang(arr) {
+        let sum=0;
+        for (let i = 0; i < arr.length; i++) {
+            sum+=arr[i];
+        }
+        return sum;
+    }
+    //6.nhận vào 1 mảng, trả về số phần tử chẵn trong mảng
+    function layPhanTuChanTrongMang(arr) {
+        let count=0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]%2==0){
+                count++
+            }
+        }
+        return count;
+    }
+    //7.nhận vào 1 mảng và 1 số, trả về vị trí của số trong mảng
+    function layViTriCuaPhanTuTrongMang(arr,a) {
+        let index;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]==a){
+                index=i;
+            }
+        }
+        return index;
+    }
+</script>
+</body>
+</html>
